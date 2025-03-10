@@ -13,3 +13,12 @@ Crea una funzione che non ha parametri. La funzione dovrebbe restituire un ogget
 
 const names = require('./names')
 const hobbies = require('./hobbies')
+
+function people(){
+    return {
+        fullName: names('Brian', 'Cosentino'),
+        hobbies: hobbies('coding', 'football', 'gym')
+    }
+}
+console.log(people());
+
